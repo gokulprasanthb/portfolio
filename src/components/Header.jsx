@@ -13,7 +13,7 @@ const Header = () => {
                 <li className='hover:text-indigo-950'><a href="/">Contact</a></li>
             </ul>
         </nav>
-        {toggleMenu && <nav className='items-end block md:hidden fixed top-14 right-0 w-1/3 h-full bg-indigo-950 text-white text-start px-8'>
+        {toggleMenu && <nav className='items-end block md:hidden fixed top-14 right-0 w-1/3 h-full bg-indigo-95 0 text-white text-start px-8'>
             <ul className='flex flex-col space-y-8 pt-8 '>
                 <li className='hover:text-indigo-950'><a href="/">About</a></li>
                 <li className='hover:text-indigo-950'><a href="/">Projects</a></li>
