@@ -5,7 +5,7 @@ const Header = () => {
     const[toggleMenu, setToggleMenu] = useState(false)
   return (
     <header className='w-full bg-white fixed max-md:fixed shadow-lg shadow-stone-100 flex justify-between py-5 font-semibold text-indigo-950 text-lg max-md:bg-indigo-950 max-md:text-white max-md:shadow-none md:px-20 max-md:w-full max-md:pt-6'>
-        <a href="/" className='pl-10 md:pl-32 font-bold'>GOKUL</a>
+        <a href="/" className='pl-10 md:pl-32 font-bold md:text-indigo-500'>GOKUL</a>
         <nav className='hidden md:block'>
             <ul className='flex flex-row space-x-10 pr-20 '>
                 <li className='hover:text-indigo-500'><a href="/">Home</a></li>
