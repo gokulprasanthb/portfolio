@@ -5,7 +5,7 @@ import landingPageImg from '../assets/nikeWebImage.png'
 
 const ProjectSection = () => {
   return (
-    <section className='flex flex-col my-36 py-24 justify-center bg-stone-100 w-screen'>
+    <section className='flex flex-col my-36 py-24 justify-center bg-stone-100 w-auto'>
         <div className='w-full space-y-4'>
             <h2 className='text-center text-4xl font-bold text-indigo-950'>Projects</h2>
             <p className='text-center text-gray-700'>Following are the projects that i'd done. Take a look over it</p>

@@ -8,7 +8,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className='flex flex-row justify-center md:pl-52  md:py-20 md:pt-48 max-md:flex-col max-md:px-3 max-md:pt-28 max-md:pl-10 max-md:space-y-7 w-screen mx-0'>
+    <section className='flex flex-row justify-center md:pl-52  md:py-20 md:pt-48 max-md:flex-col max-md:px-3 max-md:pt-14 max-md:pl-8 max-md:space-y-7 w-full mx-0'>
         <div className='w-1/2 mt-2 text-5xl space-y-5 text-indigo-950 max-md:w-full max-md:text-3xl max-md:text-center max-md:mt-16'>
             <h1>Hi, </h1>
             <h1>I'm <strong>Gokul Prasanth </strong></h1>

@@ -13,7 +13,7 @@ import javaLogo from '../assets/java-svgrepo-com.svg'
 
 const Techstack = () => {
   return (
-    <section className='w-screen mx-0'>
+    <section className='w-auto mx-0'>
         <h2 className='my-20 text-center text-4xl font-bold text-indigo-950'>Known Techstacks</h2>
         <div className='flex flex-wrap items-center justify-center gap-6 max-md:pl-2'>
             <div className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={htmlLogo} alt="" /></div>

@@ -1,14 +1,14 @@
 import React from 'react'
-import aboutImage from '../assets/about.png'
+import AboutImg from '../assets/about.png'
 
 const About = () => {
   return (
-    <section className='flex flex-col md:flex-row md:pt-28 md:pr-20 max-md:mt-16 w-screen mx-0'>
-        <div className='max-md:hidden md:w-1/2'>
-            <img src={aboutImage} alt="" />
+    <section className='flex flex-col md:flex-row px-5 md:pr-20 max-md:mt-10'>
+        <div className='py-5 md:w-1/2'>
+            <img className='max-md:hidden' src={AboutImg} alt='aboutImage'/>
         </div>
-        <div className='md:w-1/2 max-md:w-full flex justify-center max-md:flex max-md:flex-col max-md:items-center '>
-            <div className='flex flex-col justify-center max-md:h-full'> 
+        <div className='md:w-1/2 flex justify-center'>
+            <div className='flex flex-col justify-center text-white'>
                 <h2 className='text-center text-4xl font-bold text-indigo-950'>About Me</h2>
                 <p className='text-center pt-6 text-gray-700 max-md:w-full max-md:px-10 max-md:ml-5 max-md:text-start'>A Mechanical engineering student with a good proficiency in web
                 development and coding. Cultivated an excellent knowledge in web development
