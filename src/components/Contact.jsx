@@ -4,17 +4,22 @@ import phoneImg from '../assets/phone-svgrepo-com.svg'
 import locationImg from '../assets/location-svgrepo-com.svg'
 
 const Contact = () => {
+    const config ={
+        mail:'gokulprasanthbm@gmail.com',
+        phone:'+91 9345355340',
+        address:'Tiruppur, Tamilnadu'
+    }
   return (
-    <section className='my-20'>
+    <section id='contact' className='my-20 md:pt-28'>
         <h2 className='text-center text-4xl font-bold text-indigo-950'>Get in Touch</h2>
         <div className='w-auto flex md:flex-row max-md:flex-col'>
             <div className='md:w-1/2 max-md:w-auto pt-20 md:px-28 max-md:px-10'>
                 <h1 className='text-start font-bold text-indigo-500 text-xl'>Let's Talk</h1>
                 <p className='pt-6 text-gray-700 max-md:w-full text-start'>If you would like to discuss potential projects, or simply want to connect, please feel free to reach out. I'm always open to new opportunities and collaborations. Looking forward to hearing from you!</p>
                 <ul className='pt-6 space-y-3 '>
-                    <li className='flex flex-row gap-2'><img className='w-6 h-6' src={mailImg} alt="" />gokulprasanthbm@gmail.com</li>
-                    <li className='flex flex-row gap-2'><img className='w-6 h-6' src={phoneImg} alt="" />+91 9345355340</li>
-                    <li className='flex flex-row gap-2'><img className='w-6 h-6 ' src={locationImg} alt="" />Tiruppur, Tamilnadu</li>
+                    <li className='flex flex-row gap-2'><img className='w-6 h-6' src={mailImg} alt="" />{config.mail}</li>
+                    <li className='flex flex-row gap-2'><img className='w-6 h-6' src={phoneImg} alt="" />{config.phone}</li>
+                    <li className='flex flex-row gap-2'><img className='w-6 h-6 ' src={locationImg} alt="" />{config.address}</li>
                 </ul>
             </div>
             <div className='md:w-1/2 max-md:w-auto pt-20 md:px-28 max-md:px-10'>
