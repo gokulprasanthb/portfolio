@@ -14,7 +14,7 @@ const Contact = () => {
                 <ul className='pt-6 space-y-3 '>
                     <li className='flex flex-row gap-2'><img className='w-6 h-6' src={mailImg} alt="" />gokulprasanthbm@gmail.com</li>
                     <li className='flex flex-row gap-2'><img className='w-6 h-6' src={phoneImg} alt="" />+91 9345355340</li>
-                    <li className='flex flex-row gap-2'><img className='w-6 h-6 opacity-60' src={locationImg} alt="" />Tiruppur, Tamilnadu</li>
+                    <li className='flex flex-row gap-2'><img className='w-6 h-6 ' src={locationImg} alt="" />Tiruppur, Tamilnadu</li>
                 </ul>
             </div>
             <div className='md:w-1/2 max-md:w-auto pt-20 md:px-28 max-md:px-10'>

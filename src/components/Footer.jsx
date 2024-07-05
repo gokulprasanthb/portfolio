@@ -1,5 +1,6 @@
 import React from 'react'
 import myLogo from '../assets/gplogo.png'
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
@@ -18,6 +19,7 @@ const Footer = () => {
         </div>
 
         <div className='flex space-x-6 pt-2 justify-center text-gray-500'>
+                <a href="/"><FaGithub className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
                 <a href="/"><FaLinkedin className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
                 <a href="/"><FaSquareXTwitter className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
                 <a href="/"><FaFacebook className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
