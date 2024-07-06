@@ -14,7 +14,7 @@ const Hero = () => {
         resumeLink: 'https://bronze-kimmi-61.tiiny.site'
     }
   return (
-    <section id='hero' className='flex flex-row justify-center md:pl-52  md:py-20 md:pt-48 max-md:flex-col max-md:px-3 max-md:pt-14 max-md:pl-8 max-md:space-y-7 w-auto mx-0'>
+    <section id='hero' className='flex flex-row justify-center md:pl-52  md:py-20 md:pt-48 max-md:flex-col max-md:px-3 max-md:pt-14 max-md:pl-6 max-md:space-y-7 w-auto max-md:w-full mx-0'>
         <div className='pt-6 w-1/2 mt-2 text-5xl space-y-5 text-indigo-950 max-md:w-full max-md:text-3xl max-md:text-center max-md:mt-16'>
             <motion.h1 initial={{opacity:0, x:-100}} animate={{opacity:1, x:0}} transition={{duration:0.5, delay:0.5}}>Hi, </motion.h1>
             <motion.h1 initial={{opacity:0, x:-100}} animate={{opacity:1, x:0}} transition={{duration:0.5, delay:0.7}}>I'm <strong>Gokul Prasanth </strong></motion.h1>

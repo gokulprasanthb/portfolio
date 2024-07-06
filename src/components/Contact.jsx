@@ -3,6 +3,7 @@ import mailImg from '../assets/mail-reception-svgrepo-com.svg'
 import phoneImg from '../assets/phone-svgrepo-com.svg'
 import locationImg from '../assets/location-svgrepo-com.svg'
 import { motion } from "framer-motion"
+import { clear } from '@testing-library/user-event/dist/clear'
 
 const Contact = () => {
     const config ={
@@ -10,6 +11,34 @@ const Contact = () => {
         phone:'+91 9345355340',
         address:'Tiruppur, Tamilnadu'
     }
+
+    function resetForm(){
+        document.getElementById("contactForm").reset();
+    }
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", "01301507-3f47-4331-ae18-807dfb1e4d4c");
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: json
+        }).then((res) => res.json());
+    
+        if (res.success) {
+          alert(res.message);
+        }
+      };
+
   return (
     <section id='contact' className='my-20 md:pt-28'>
         <h2 className='text-center text-4xl font-bold text-indigo-950'>Get in Touch</h2>
@@ -23,16 +52,18 @@ const Contact = () => {
                     <li className='flex flex-row gap-2'><img className='w-6 h-6 ' src={locationImg} alt="" />{config.address}</li>
                 </ul>
             </motion.div>
+
             <div className='md:w-1/2 max-md:w-auto pt-20 md:px-28 max-md:px-10'>
-                <motion.form initial={{opacity:0, y:100}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.5}}  action="" className='flex flex-col space-y-3'>
+                <motion.form id='contactForm' onSubmit={onSubmit} initial={{opacity:0, y:100}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.5}}  action="" className='flex flex-col space-y-3'>
                     <label className='font-medium text-indigo-500' htmlFor="">Your Name</label>
-                    <input className='p-4 border-2 border-gray-400' type="text" placeholder='Enter your name' name='name'/>
+                    <input className='p-4 border-2 border-gray-400' type="text" placeholder='Enter your name' name='name' required/>
                     <label className='font-medium text-indigo-500' htmlFor="">Your Email</label>
-                    <input className='p-4 border-2 border-gray-400' type="email" placeholder='Enter your email' name='email'/>
+                    <input className='p-4 border-2 border-gray-400' type="email" placeholder='Enter your email' name='email' required/>
                     <label className='font-medium text-indigo-500' htmlFor="">Write your message</label>
-                    <textarea maxLength={100} rows={8} className='p-4 border-2 border-gray-400' name="message" placeholder='write the message'></textarea>
-                    <div>
-                    <button type='submit' className=' border-2 text-white bg-indigo-500 w-28 h-14 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 duration-300 rounded-full mt-7 max-md:ml-20'>Submit</button>
+                    <textarea maxLength={100} rows={8} className='p-4 border-2 border-gray-400' name="message" placeholder='write the message' required></textarea>
+                    <div className='flex flex-row max-md:space-x-3 max-md:ml-0 space-x-5'>
+                        <button type='reset' className='border-2 text-white bg-indigo-500 w-28 h-14 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 duration-300 rounded-full mt-7 max-md:ml-0'>Clear</button>
+                        <button type='submit' className=' border-2 text-white bg-indigo-500 w-28 h-14 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 duration-300 rounded-full mt-7 max-md:ml-20'>Submit</button>
                     </div>
                 </motion.form>
             </div>

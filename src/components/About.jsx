@@ -7,7 +7,7 @@ const About = () => {
     paragraph: 'A Mechanical engineering student with a good proficiency in web development and coding. Cultivated an excellent knowledge in web development through creating dynamic web applications. I\'ve honed my skills in both front-end and back-end development, making me a versatile and reliable professional. My toolkit includes React JS, Node JS, Tailwind CSS among others. I enjoy diving into new programming languages and frameworks, Let\'s make something great together!'
   }
   return (
-    <section id='about' className='flex flex-col md:flex-row px-5 md:pr-20 md:pt-20 max-md:mt-1 max-md:pt-20 w-auto'>
+    <section id='about' className='flex flex-col md:flex-row px-5 md:pr-20 md:pt-20 max-md:mt-1 max-md:pt-20 max-md:pl-1 w-auto'>
         <div  className='py-5 md:w-1/2'>
             <motion.img initial={{opacity:0, x:-100}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, delay:0.5}} className='max-md:hidden' src={AboutImg} alt='aboutImage'/>
         </div>
