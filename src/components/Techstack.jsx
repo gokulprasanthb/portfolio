@@ -9,23 +9,35 @@ import expressLogo from '../assets/express-svgrepo-com.svg'
 import mongoLogo from '../assets/mongo-svgrepo-com.svg'
 import mysqlLogo from '../assets/mysql-logo-svgrepo-com.svg'
 import javaLogo from '../assets/java-svgrepo-com.svg'
+import { motion } from "framer-motion"
 
-
+const iconVariants = (duration) => ({
+  initial: {y:-10},
+  animate: {
+    y:[10,-10],
+    transition: {
+      duration: duration,
+      ease: "linear",
+      repeat:Infinity,
+      repeatType: "reverse",
+    },
+  },
+})
 const Techstack = () => {
   return (
     <section id='techstacks' className='w-auto mx-0'>
         <h2 className='my-20 text-center text-4xl font-bold text-indigo-950'>Known Techstacks</h2>
         <div className='flex flex-wrap items-center justify-center gap-6 max-md:pl-2'>
-            <div className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={htmlLogo} alt="" /></div>
-            <div className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={cssLogo} alt="" /></div>
-            <div className='shadow-md rounded-full border-slate-800 p-3'><RiTailwindCssFill className='text-7xl text-cyan-500'/></div>
-            <div className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={jsLogo} alt="" /></div>
-            <div className='shadow-md rounded-full border-slate-800 p-3'><FaReact className='text-7xl text-cyan-500'/></div>
-            <div className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={nodeLogo} alt="" /></div>
-            <div className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={expressLogo} alt="" /></div>
-            <div className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={mongoLogo} alt="" /></div>
-            <div className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={mysqlLogo} alt="" /></div>
-            <div className='shadow-md rounded-full border-slate-800 p-4'><img className='w-16 h-16' src={javaLogo} alt="" /></div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={htmlLogo} alt="" /></motion.div>
+            <motion.div variants={iconVariants(3)} initial="initial" animate="animate" className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={cssLogo} alt="" /></motion.div>
+            <motion.div variants={iconVariants(3.5)} initial="initial" animate="animate" className='shadow-md rounded-full border-slate-800 p-3'><RiTailwindCssFill className='text-7xl text-cyan-500'/></motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={jsLogo} alt="" /></motion.div>
+            <motion.div variants={iconVariants(3)} initial="initial" animate="animate" className='shadow-md rounded-full border-slate-800 p-3'><FaReact className='text-7xl text-cyan-500'/></motion.div>
+            <motion.div variants={iconVariants(3.5)} initial="initial" animate="animate" className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={nodeLogo} alt="" /></motion.div>
+            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={expressLogo} alt="" /></motion.div>
+            <motion.div variants={iconVariants(3)} initial="initial" animate="animate" className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={mongoLogo} alt="" /></motion.div>
+            <motion.div variants={iconVariants(3.5)} initial="initial" animate="animate" className='shadow-md rounded-full border-slate-800 p-2'><img className='w-20 h-20' src={mysqlLogo} alt="" /></motion.div>
+            <motion.div variants={iconVariants(2)} initial="initial" animate="animate" className='shadow-md rounded-full border-slate-800 p-4'><img className='w-16 h-16' src={javaLogo} alt="" /></motion.div>
         </div>
     </section>
   )
