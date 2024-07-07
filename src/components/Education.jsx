@@ -10,12 +10,12 @@ const Education = () => {
                     <p>Bannari Amman Institute of Technology</p>
                     <h5>Year of passing out: 2025</h5>
             </div>
-            <div initial={{opacity:0, x:-100}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, delay:1}} className='w-1/3 max-md:w-full md:space-y-3 shadow-lg p-14 max-md:p-8 md:mx-14 bg-stone-100 hover:bg-white duration-300 rounded-lg'>
+            <div className='w-1/3 max-md:w-full md:space-y-3 shadow-lg p-14 max-md:p-8 md:mx-14 bg-stone-100 hover:bg-white duration-300 rounded-lg'>
                     <h3 className='text-indigo-500'><strong>HSC - Tamil Nadu State Board</strong></h3>
                     <p>Studied at R.G Matric HR SEC School</p>
                     <h5>Passed out at 2021</h5>
             </div>
-            <div initial={{opacity:0, x:100}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, delay:0.5}} className='w-1/3 max-md:w-full md:space-y-3 shadow-md max-md:p-8 p-14 bg-stone-100 hover:bg-white duration-300 rounded-lg'>
+            <div  className='w-1/3 max-md:w-full md:space-y-3 shadow-md max-md:p-8 p-14 bg-stone-100 hover:bg-white duration-300 rounded-lg'>
                     <h3 className='text-indigo-500'><strong>SSLC - Tamil Nadu State Board</strong></h3>
                     <p>Studied at R.G Matric HR SEC School</p>
                     <h5>Passed out at 2019</h5>

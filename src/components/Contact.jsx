@@ -3,7 +3,6 @@ import mailImg from '../assets/mail-reception-svgrepo-com.svg'
 import phoneImg from '../assets/phone-svgrepo-com.svg'
 import locationImg from '../assets/location-svgrepo-com.svg'
 import { motion } from "framer-motion"
-import { clear } from '@testing-library/user-event/dist/clear'
 
 const Contact = () => {
     const config ={
@@ -12,9 +11,6 @@ const Contact = () => {
         address:'Tiruppur, Tamilnadu'
     }
 
-    function resetForm(){
-        document.getElementById("contactForm").reset();
-    }
 
     const onSubmit = async (event) => {
         event.preventDefault();

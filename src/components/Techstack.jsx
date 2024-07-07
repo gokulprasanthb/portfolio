@@ -11,18 +11,6 @@ import mysqlLogo from '../assets/mysql-logo-svgrepo-com.svg'
 import javaLogo from '../assets/java-svgrepo-com.svg'
 import { motion } from "framer-motion"
 
-const iconVariants = (duration) => ({
-  initial: {y:-10},
-  animate: {
-    y:[10,-10],
-    transition: {
-      duration: duration,
-      ease: "linear",
-      repeat:Infinity,
-      repeatType: "reverse",
-    },
-  },
-})
 const Techstack = () => {
   return (
     <section id='techstacks' className='w-auto mx-0 '>
