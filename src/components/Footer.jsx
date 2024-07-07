@@ -26,8 +26,8 @@ const Footer = () => {
         </div>
 
         <div className='flex space-x-6 pt-2 justify-center text-gray-500'>
-                <a target='_blank' href={config.github}><FaGithub className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
-                <a target='_blank' href={config.linkedin}><FaLinkedin className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
+                <a target='_blank' rel="noopener noreferrer" href={config.github}><FaGithub className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
+                <a target='_blank' rel="noopener noreferrer" href={config.linkedin}><FaLinkedin className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
                 <a  href={config.twitter}><FaSquareXTwitter className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
                 <a  href={config.facebook}><FaFacebook className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
                 <a  href={config.instagram}><FaInstagramSquare className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
