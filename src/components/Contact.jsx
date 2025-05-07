@@ -33,6 +33,8 @@ const Contact = () => {
         if (res.success) {
           alert(res.message);
         }
+
+        event.target.reset();
       };
 
   return (
@@ -56,9 +58,8 @@ const Contact = () => {
                     <label className='font-medium text-indigo-500' htmlFor="">Your Email</label>
                     <input className='p-4 border-2 border-gray-400' type="email" placeholder='Enter your email' name='email' required/>
                     <label className='font-medium text-indigo-500' htmlFor="">Write your message</label>
-                    <textarea maxLength={100} rows={8} className='p-4 border-2 border-gray-400' name="message" placeholder='write the message' required></textarea>
+                    <textarea maxLength={100} rows={4} className='p-4 border-2 border-gray-400' name="message" placeholder='write the message' required></textarea>
                     <div className='flex flex-row max-md:space-x-3 max-md:ml-0 space-x-5'>
-                        <button type='reset' className='border-2 text-white bg-indigo-500 w-28 h-14 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 duration-300 rounded-full mt-7 max-md:ml-0'>Clear</button>
                         <button type='submit' className=' border-2 text-white bg-indigo-500 w-28 h-14 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 duration-300 rounded-full mt-7 max-md:ml-20'>Submit</button>
                     </div>
                 </motion.form>

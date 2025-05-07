@@ -1,5 +1,5 @@
 import React from 'react'
-import myLogo from '../assets/gplogo.png'
+import myLogo from '../assets/GPlogoo.png'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -12,13 +12,12 @@ const Footer = () => {
         github:'https://github.com/gokulprasanthb',
         linkedin:'https://www.linkedin.com/in/gokul-prasanth-635067276/',
         twitter:'',
-        facebook:'',
         instagram:'',
     }
   return (
     <footer id='footer' className='flex flex-col pt-28 space-y-5'>
         <div className='flex justify-center'>
-            <a href="/"> <img className='w-14 h-14' src={myLogo} alt="" /></a>
+            <a href="/"> <img className='w-12 h-10' src={myLogo} alt="" /></a>
         </div>
         
         <div className='text-center'>
@@ -29,7 +28,6 @@ const Footer = () => {
                 <a target='_blank' rel="noopener noreferrer" href={config.github}><FaGithub className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
                 <a target='_blank' rel="noopener noreferrer" href={config.linkedin}><FaLinkedin className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
                 <a  href={config.twitter}><FaSquareXTwitter className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
-                <a  href={config.facebook}><FaFacebook className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
                 <a  href={config.instagram}><FaInstagramSquare className='w-6 h-6 hover:text-indigo-700 duration-200'/></a>
         </div>
 
