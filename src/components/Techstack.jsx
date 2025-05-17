@@ -3,14 +3,14 @@ import htmlLogo from '../assets/html-5-svgrepo-com.svg'
 import cssLogo from '../assets/css-3-svgrepo-com.svg'
 import { RiTailwindCssFill } from "react-icons/ri"
 import jsLogo from '../assets/js-svgrepo-com.svg'
-import { FaReact } from "react-icons/fa6";
+import { FaReact } from "react-icons/fa6"
 import nodeLogo from '../assets/node-js-svgrepo-com.svg'
 import expressLogo from '../assets/express-svgrepo-com.svg'
 import mongoLogo from '../assets/mongo-svgrepo-com.svg'
 import mysqlLogo from '../assets/mysql-logo-svgrepo-com.svg'
 import javaLogo from '../assets/java-svgrepo-com.svg'
 import { motion } from "framer-motion"
-
+  
 const Techstack = () => {
   return (
     <section id='techstacks' className='w-auto mx-0 '>

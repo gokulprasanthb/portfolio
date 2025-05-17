@@ -1,10 +1,6 @@
 import React from 'react'
 import myImage from '../assets/myImage.jpeg'
 import resume from '../assets/resume.pdf'
-// import { FaLinkedin } from "react-icons/fa";
-// import { FaSquareXTwitter } from "react-icons/fa6";
-// import { FaFacebook } from "react-icons/fa";
-// import { FaInstagramSquare } from "react-icons/fa";
 
 import { motion } from "framer-motion"
 
@@ -25,7 +21,7 @@ const Hero = () => {
             </div>
 
             <div className='w-1/2 max-md:pl-2 md:pl-28 max-md:w-full'>
-                <motion.img initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 1 }} src={myImage} alt="" className='h-96 rounded-lg max-md:pl-6 max-md:pt-10 max-md:rounded-lg' />
+                <motion.img initial={{ opacity: 0, x: 100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 1 }} src={myImage} alt="ProfileImage" className='h-96 rounded-lg max-md:pl-6 max-md:pt-10 max-md:rounded-lg' />
             </div>
         </section>
     )

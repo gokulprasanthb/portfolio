@@ -11,7 +11,7 @@ const ProjectSection = () => {
             <h2 className='text-center text-4xl font-bold text-indigo-950'>Projects</h2>
             <p className='text-center text-gray-700'>Following are the projects that i'd done. Take a look over it</p>
         </div>
-
+                        
         <div className='w-auto pt-10'>
             <div className='flex flex-col md:flex-row md:px-28 md:space-x-14  max-md:flex-wrap items-center justify-center max-md:gap-6 max-md:pl-2 max-md:space-y-8'>
                 <motion.div initial={{opacity:0, x:-100}} whileInView={{opacity:1, x:0}} transition={{duration:0.5, delay:0.5}} className='w-1/3 max-md:w-80 space-y-2 bg-white shadow-md rounded-sm pb-10 pr-0 hover:bg-slate-200 hover:shadow-xl duration-700'>
