@@ -9,7 +9,7 @@ const Footer = () => {
     const year = new Date();
     const config = {
         github:'https://github.com/gokulprasanthb',
-        linkedin:'https://www.linkedin.com/in/gokul-prasanth-635067276/',
+        linkedin:'https://www.linkedin.com/in/gokul-prasanth-ab3ab7365/',
         twitter:'',
         instagram:'',
     }
